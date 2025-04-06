@@ -1,0 +1,65 @@
+/* Force dark background for the whole Streamlit app */
+body, .stApp {
+    background-color: #141414 !important;
+    color: white !important;
+}
+
+/* Fix label (e.g., "Choose a movie") text color */
+label, .css-145kmo2 {
+    color: white !important;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* App title */
+h1 {
+    color: #e50914;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+    text-shadow: 0 0 10px #e50914, 0 0 20px #000;
+}
+
+/* Dropdown background and text color */
+.css-1cpxqw2 {
+    background-color: #1f1f1f !important;
+    color: white !important;
+    border: 1px solid #e50914 !important;
+    border-radius: 10px !important;
+}
+
+.css-1d391kg {
+    color: white !important;
+}
+
+/* Button style */
+.stButton button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    box-shadow: 0 0 10px #e50914, 0 0 20px rgba(229, 9, 20, 0.4);
+    transition: all 0.3s ease;
+}
+
+.stButton button:hover {
+    background-color: #ff1f1f;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Poster image hover */
+img {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(229, 9, 20, 0.4);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}

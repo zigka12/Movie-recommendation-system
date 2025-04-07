@@ -2,9 +2,14 @@ import streamlit as st
 import pickle
 import pandas as pd
 import requests
+import os
 
 st.set_page_config(page_title="Movie Recommender", page_icon="🎬")
 
+# Download similarity.pkl from Google Drive if not present
+if not os.path.exists("similarity.pkl"):
+    import gdown
+    gdown.download("https://drive.google.com/uc?id=1tNOAvUE1F_OV6LhwBvcPlF1zDiCEMWzd", "similarity.pkl", quiet=False)
 
 # Custom CSS
 with open("style.css") as f:

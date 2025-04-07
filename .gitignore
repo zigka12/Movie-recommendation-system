@@ -1,0 +1,24 @@
+# Ignore large pickle files
+similarity.pkl
+movies.pkl
+
+# Ignore datasets if you don’t want to upload raw data
+Datasets/
+
+# Ignore temporary or notebook checkpoint files
+.ipynb_checkpoints/
+
+# Ignore virtual environment folders (if any)
+venv/
+env/
+
+# Ignore system/IDE files
+.DS_Store
+Thumbs.db
+
+# Ignore Streamlit cache (optional)
+.streamlit/
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
